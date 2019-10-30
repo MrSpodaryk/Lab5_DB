@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/Spodaryk_db?autoReconnect=true&amp;useSSL=false</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+
+        <mapping class="ua.lviv.iot.model.CandidateLevelEntity"/>
+        <mapping class="ua.lviv.iot.model.ContactPersonInfoEntity"/>
+        <mapping class="ua.lviv.iot.model.ItCompanyInfoEntity"/>
+        <mapping class="ua.lviv.iot.model.LanguageEntity"/>
+        <mapping class="ua.lviv.iot.model.LevelOfExperienceEntity"/>
+        <mapping class="ua.lviv.iot.model.TechnicalLevelEntity"/>
+        <mapping class="ua.lviv.iot.model.UserInfoEntity"/>
+        <mapping class="ua.lviv.iot.model.UserPrivateInfoEntity"/>
+        <mapping class="ua.lviv.iot.model.VacancyInfoEntity"/>
+        <mapping class="ua.lviv.iot.model.VacancyInfoHasUserInfoEntity"/>
+
+    </session-factory>
+</hibernate-configuration>
